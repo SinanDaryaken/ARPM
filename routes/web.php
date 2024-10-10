@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ElegantCollectionController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('elegant-collections', [ElegantCollectionController::class, 'index']);
